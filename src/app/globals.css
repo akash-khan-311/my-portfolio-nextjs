@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #2b2a2a;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 105px;
+  -webkit-border-radius: 105px;
+  -moz-border-radius: 105px;
+  -ms-border-radius: 105px;
+  -o-border-radius: 105px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F31559;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+
 .switch {
   font-size: 17px;
   position: relative;
@@ -130,4 +160,17 @@
 
 .input:checked + .slider:before {
   transform: translateX(30px);
+}
+
+.menu {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  display: none;
+  z-index: 15;
+}
+@media screen and (max-width: 1140px) {
+  .menu {
+    display: block;
+  }
 }

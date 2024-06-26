@@ -18,7 +18,7 @@ const Sidebar = () => {
       {/* Small Screen Menu */}
       <div className="menu ">
         <button
-          className="mobile-menu-button lg:hidden p-4 focus:outline-none text-[#F31559] fixed top-0 right-5"
+          className="mobile-menu-button  p-4 focus:outline-none text-[#F31559] fixed top-0 right-5"
           onClick={handleToggle}
         >
           <GiHamburgerMenu className="h-10 w-10" />

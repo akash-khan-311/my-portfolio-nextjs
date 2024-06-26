@@ -25,97 +25,31 @@ const InfiniteScrollCom = () => {
   };
 
   return (
+    <>
     <InfiniteScroll
       dataLength={projects.length}
       next={fetchMoreData}
       hasMore={hasMore}
       loader={
-        <div
-          aria-label="Loading..."
-          role="status"
-          className="flex items-center justify-center space-x-2 overflow-y-hidden"
-        >
-          <svg
-            className="h-20 w-20 animate-spin stroke-yellow-600"
-            viewBox="0 0 256 256"
-          >
-            <line
-              x1={128}
-              y1={32}
-              x2={128}
-              y2={64}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            />
-            <line
-              x1="195.9"
-              y1="60.1"
-              x2="173.3"
-              y2="82.7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            />
-            <line
-              x1={224}
-              y1={128}
-              x2={192}
-              y2={128}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            ></line>
-            <line
-              x1="195.9"
-              y1="195.9"
-              x2="173.3"
-              y2="173.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            />
-            <line
-              x1={128}
-              y1={224}
-              x2={128}
-              y2={192}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            ></line>
-            <line
-              x1="60.1"
-              y1="195.9"
-              x2="82.7"
-              y2="173.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            />
-            <line
-              x1={32}
-              y1={128}
-              x2={64}
-              y2={128}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            />
-            <line
-              x1="60.1"
-              y1="60.1"
-              x2="82.7"
-              y2="82.7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={24}
-            ></line>
-          </svg>
-          <span className="text-4xl font-medium text-yellow-600 ">
-            Loading...
-          </span>
+        <section className="my-10 animate-pulse">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-x-10">
+          <div className="bg-gray-300 h-72 rounded-md w-full md:w-2/5"></div>
+          <div className="w-full md:w-3/5 flex flex-col justify-center items-center md:items-start">
+            <div className="bg-gray-300 h-10 w-3/5 my-5 md:my-0 rounded"></div>
+            <div className="bg-gray-300 h-6 w-full my-4 rounded"></div>
+            <div className="bg-gray-300 h-6 w-4/5 my-4 rounded"></div>
+            <div className="flex gap-5 flex-wrap justify-center items-center md:items-start md:justify-start">
+              <div className="bg-gray-300 h-6 w-20 my-2 rounded"></div>
+              <div className="bg-gray-300 h-6 w-20 my-2 rounded"></div>
+              <div className="bg-gray-300 h-6 w-20 my-2 rounded"></div>
+            </div>
+            <div className="flex gap-x-5 mt-5">
+              <div className="bg-gray-300 h-10 w-32 rounded"></div>
+              <div className="bg-gray-300 h-10 w-32 rounded"></div>
+            </div>
+          </div>
         </div>
+      </section>
       }
     >
       <div className="my-20">
@@ -126,6 +60,8 @@ const InfiniteScrollCom = () => {
         ))}
       </div>
     </InfiniteScroll>
+    
+    </>
   );
 };
 
