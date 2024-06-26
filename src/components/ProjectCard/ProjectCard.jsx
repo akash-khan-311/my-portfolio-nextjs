@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   const { name, live_link, code_link, image, description, tags } = project;
+
   return (
     <section className="my-10">
       <div className="flex flex-col md:flex-row justify-between items-center gap-x-10">
@@ -22,7 +23,7 @@ const ProjectCard = ({ project }) => {
           <p className="text-black dark:text-gray-400 text-lg my-6 text-center md:text-left">
             {description}
           </p>
-          <div>{/* {tags.map(tag=> <p key={tag}>{tag}</p>)} */}</div>
+          <div className="flex gap-5 flex-wrap justify-center items-center md:items-start md:justify-start"> {tags.map(tag=> <p key={tag} className="text-gray-600  bg-gray-300 p-1 rounded-lg">{tag}</p>)}</div>
           <div className="flex gap-x-5 mt-5">
             {/* Live Link */}
             <Link

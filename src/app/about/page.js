@@ -1,14 +1,15 @@
 import DownloadButton from "@/components/DownloadButton";
 import PageTitle from "@/components/PageTitle/PageTitle";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
-import { getServicesData } from "@/lib/getServicesData";
+import { getServiceData } from "@/data/serviceData";
+
 import Image from "next/image";
 export const metadata = {
     title: "About",
     description: "about Of Akash Khan",
   };
 const AboutPage = async () => {
-  const services = await getServicesData();
+  const services =getServiceData()
 
   return (
     <>
