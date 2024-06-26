@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Animation from "@/components/Animation";
+import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 const nunito = Nunito({
   weight: ['400', '700'], // Specify the weights you want to use
   subsets: ['latin'], // Specify the subsets you need
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
            
             </div>
           </div>
+          <ScrollToTop/>
           <ThemeSwitcher />
         </div>
       </body>

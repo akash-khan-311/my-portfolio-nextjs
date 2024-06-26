@@ -17,20 +17,20 @@ const AboutPage = async () => {
         <PageTitle title={"About Me"} />
         <div className="min-h-screen flex justify-center items-center">
           <div className="text-gray-600 body-font">
-            <div className="  flex  py-10 lg:flex-row flex-col items-start">
+            <div className="flex justify-between py-10 lg:flex-row flex-col mx-auto items-center">
               <div
                 data-aos="fade-right"
                 data-aos-delay="0"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                className="md:w-full lg:w-1/2 w-full h-[600px] mb-10 lg:mb-0"
+                className=" lg:w-1/3  h-[600px] overflow-hidden mb-10 lg:mb-0"
               >
                 <Image
-                  className="object-cover object-center rounded h-full mx-auto w-5/6  "
+                  className="w-full h-full rounded   md:w-full mx-auto "
                   alt="Akash Ali"
-                  src={"/me.jpg"}
-                  width={300}
-                  height={300}
+                  src={"/akash.jpeg"}
+                  width={500}
+                  height={500}
                 />
               </div>
               <div
@@ -38,7 +38,7 @@ const AboutPage = async () => {
                 data-aos-delay="1000"
                 data-aos-duration="10"
                 data-aos-easing="ease-in-out"
-                className="lg:flex-grow lg:flex-1 w-full  lg:pl-5 pl-0 flex flex-col lg:items-start lg:text-left items-center text-center"
+                className="lg:flex-grow lg:flex-1   lg:pl-5 pl-0 flex flex-col lg:items-start lg:text-left items-center text-center"
               >
                 <h1 className="text-4xl text-black dark:text-white">
                   I&apos;m <span className="text-[#F31559]">Akash Khan</span>
@@ -53,6 +53,7 @@ const AboutPage = async () => {
                   <div className="info-title font-semibold  pr-10 md:text-xl space-y-3 text-left">
                     <p>Full Name</p>
                     <p>Age</p>
+                    <p>Relationship</p>
                     <p>Nationality</p>
                     <p>Language</p>
                     <p>Location</p>
@@ -60,6 +61,7 @@ const AboutPage = async () => {
                   <div className="info md:text-xl space-y-3 text-left">
                     <p>: Md Akash Khan</p>
                     <p>: 24</p>
+                    <p>: Married</p>
                     <p>: Bangladeshi</p>
                     <p>: Bengali, English</p>
                     <p>: Dhaka, Bangladesh</p>
