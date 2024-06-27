@@ -10,6 +10,8 @@ const ProjectCard = ({ project }) => {
         <div className="cursor-pointer border border-pink-600 overflow-hidden  h-72  rounded-md w-full md:w-2/5">
           <Image
             src={image}
+            blurDataURL="blur"
+  
             className=" hover:scale-105 transition-all  duration-500 h-full w-full"
             alt={name}
             width={500}

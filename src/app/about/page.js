@@ -3,6 +3,7 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import { getServiceData } from "@/data/serviceData";
 
+
 import Image from "next/image";
 export const metadata = {
     title: "About",
@@ -17,7 +18,7 @@ const AboutPage = async () => {
         <PageTitle title={"About Me"} />
         <div className="min-h-screen flex justify-center items-center">
           <div className="text-gray-600 body-font">
-            <div className="flex justify-between py-10 lg:flex-row flex-col mx-auto items-center">
+            <div className="flex justify-between py-10 lg:flex-row flex-col mx-auto items-center gap-x-10">
               <div
                 data-aos="fade-right"
                 data-aos-delay="0"
@@ -28,9 +29,11 @@ const AboutPage = async () => {
                 <Image
                   className="w-full h-full rounded   md:w-full mx-auto "
                   alt="Akash Ali"
+                  fill
+                  blur="blur"
                   src={"/akash.jpeg"}
-                  width={500}
-                  height={500}
+          
+                
                 />
               </div>
               <div
@@ -38,7 +41,7 @@ const AboutPage = async () => {
                 data-aos-delay="1000"
                 data-aos-duration="10"
                 data-aos-easing="ease-in-out"
-                className="lg:flex-grow lg:flex-1   lg:pl-5 pl-0 flex flex-col lg:items-start lg:text-left items-center text-center"
+                className="lg:flex-grow lg:flex-1 lg:pl-5 pl-0 flex flex-col lg:items-start lg:text-left items-center text-center"
               >
                 <h1 className="text-4xl text-black dark:text-white">
                   I&apos;m <span className="text-[#F31559]">Akash Khan</span>
