@@ -151,7 +151,7 @@ const MySkillsPage = () => {
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
-                wordpress
+                Next js
               </div>
 
               {/* Progress */}
