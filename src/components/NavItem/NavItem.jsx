@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 const NavItems = ({ label, address, handleToggle }) => {
     const pathname = usePathname()
     const isActive = pathname === address
-
+    const isEnd = true; 
   return (
     <Link
       href={address}
-      end
+      {...(isEnd && { end: "true" })}
       onClick={handleToggle}
       className={
         `flex justify-center px-4 py-2 my-1 uppercase  transition-colors duration-300 transform hover:bg-[#f3155852]  hover:text-white ${
