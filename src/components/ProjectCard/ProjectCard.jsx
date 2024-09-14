@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   const { name, live_link, code_link, image, description, tags } = project;
-  console.log(image);
 
   return (
     <section className="my-10">

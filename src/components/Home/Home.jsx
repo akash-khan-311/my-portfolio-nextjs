@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <ParticlesComponent />
-      <div className=" min-h-[calc(100vh-40px)] flex flex-col justify-center items-center max-w-4xl mx-auto space-y-4 ">
+      <div className=" min-h-[calc(100vh-160px)] flex flex-col justify-center items-center max-w-4xl mx-auto space-y-4 ">
         <h2 className="text-black dark:text-white text-3xl lg:text-5xl font-semibold">
           {"Hi, I'm "}
           <TypeAnimationCom />

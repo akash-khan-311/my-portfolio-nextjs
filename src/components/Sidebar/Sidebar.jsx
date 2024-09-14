@@ -80,7 +80,7 @@ const Sidebar = () => {
         </div>
         <div>
           <p className="text-black dark:text-white text-center pt-2 flex justify-center items-center border-t border-t-pink-500">
-            © 2023 | <b> Akash Ali</b>
+            © 2024 <span className="mx-1">|</span> <b> Akash Ali</b>
           </p>
         </div>
       </div>

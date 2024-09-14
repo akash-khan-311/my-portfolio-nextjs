@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Animation from "@/components/Animation";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import Head from "next/head";
 const nunito = Nunito({
   weight: ["400", "700"], // Specify the weights you want to use
   subsets: ["latin"], // Specify the subsets you need
@@ -21,6 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
+        <Head>
+          <link className="rounded-full" rel="icon" href="/favicon.ico" />
+        </Head>
         <div className="relative min-h-screen overflow-x-hidden md:flex">
           {/* Sidebar */}
           <Sidebar />
