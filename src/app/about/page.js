@@ -3,14 +3,13 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import { getServiceData } from "@/data/serviceData";
 
-
 import Image from "next/image";
 export const metadata = {
-    title: "About",
-    description: "about Of Akash Khan",
-  };
+  title: "About",
+  description: "about Of Akash Khan",
+};
 const AboutPage = async () => {
-  const services =getServiceData()
+  const services = getServiceData();
 
   return (
     <>
@@ -19,21 +18,15 @@ const AboutPage = async () => {
         <div className="min-h-screen flex justify-center items-center">
           <div className="text-gray-600 body-font">
             <div className="flex justify-between py-10 lg:flex-row flex-col mx-auto items-center gap-x-10">
-              <div
-                data-aos="fade-right"
-                data-aos-delay="0"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                className=" lg:w-1/3  h-[600px] overflow-hidden mb-10 lg:mb-0"
-              >
+              <div className=" lg:w-1/3  h-[600px] overflow-hidden mb-10 lg:mb-0">
                 <Image
                   className="w-full h-full rounded   md:w-full mx-auto "
                   alt="Akash Ali"
-                  fill
-                  blur="blur"
+                  placeholder="blur"
+                  blurDataURL="/akash.jpeg"
+                  width={500}
+                  height={500}
                   src={"/akash.jpeg"}
-          
-                
                 />
               </div>
               <div

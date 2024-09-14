@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   const { name, live_link, code_link, image, description, tags } = project;
+  console.log(image);
 
   return (
     <section className="my-10">
@@ -10,9 +11,7 @@ const ProjectCard = ({ project }) => {
         <div className="cursor-pointer border border-pink-600 overflow-hidden  w-full lg:w-2/4 md:w-3/4 md:h-96  rounded-md">
           <Image
             src={image}
-            blurDataURL="blur"
-  
-            className=" hover:scale-105 transition-all duration-500 w-full h-full "
+            className="hover:scale-105 transition-all duration-500 w-full h-full "
             alt={name}
             width={500}
             height={500}
@@ -25,7 +24,17 @@ const ProjectCard = ({ project }) => {
           <p className="text-black dark:text-gray-400 text-lg lg:my-6 my-1 text-center md:text-left">
             {description}
           </p>
-          <div className="flex gap-5 flex-wrap justify-center items-center md:items-start md:justify-start"> {tags.map(tag=> <p key={tag} className="text-gray-600  bg-gray-300 p-1 rounded-lg">{tag}</p>)}</div>
+          <div className="flex gap-5 flex-wrap justify-center items-center md:items-start md:justify-start">
+            {" "}
+            {tags.map((tag) => (
+              <p
+                key={tag}
+                className="text-gray-600  bg-gray-300 p-1 rounded-lg"
+              >
+                {tag}
+              </p>
+            ))}
+          </div>
           <div className="flex gap-x-5 mt-5">
             {/* Live Link */}
             <Link

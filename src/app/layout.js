@@ -21,12 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <div className="relative min-h-screen md:flex">
+        <div className="relative min-h-screen overflow-x-hidden md:flex">
           {/* Sidebar */}
           <Sidebar />
           <Animation />
           {/*  */}
-          <div className="flex-1 xl:ml-64 bg-[#e9e9fc] dark:bg-[#10121A]  duration-300 overflow-x-hidden overflow-y-hidden">
+          <div className="flex-1 min-h-screen xl:ml-64 bg-[#e9e9fc] dark:bg-[#10121A]  duration-300 overflow-x-hidden overflow-y-hidden">
             <div className=" container mx-auto  xl:p-20 lg:p-10 md:p-8 p-5  ">
               {children}
             </div>

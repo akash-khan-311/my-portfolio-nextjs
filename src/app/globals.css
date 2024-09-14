@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
 .switch {
   font-size: 17px;
   position: relative;
@@ -150,15 +151,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.input:checked + .slider {
+.input:checked+.slider {
   background-color: #183153;
 }
 
-.input:focus + .slider {
+.input:focus+.slider {
   box-shadow: 0 0 1px #183153;
 }
 
-.input:checked + .slider:before {
+.input:checked+.slider:before {
   transform: translateX(30px);
 }
 
@@ -169,6 +170,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   z-index: 15;
 }
+
 @media screen and (max-width: 1140px) {
   .menu {
     display: block;
