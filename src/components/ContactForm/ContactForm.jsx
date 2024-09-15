@@ -1,31 +1,55 @@
+"use client";
+
+import Swal from "sweetalert2";
+
 const ContactForm = () => {
+  const handleSubmitform = (e) => {
+    e.preventDefault();
+    // Make API request here to send the form data to your server
+    Swal.fire({
+      position: "center center",
+      icon: "success",
+      title: "Thanks For Contact With Me",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+
+    e.target.reset();
+  };
   return (
     <>
       <div className="dark:backdrop-blur-md dark:bg-white/20 bg-gray-500 p-6 rounded-lg">
-        <form className="mt-8 space-y-4">
+        <form onSubmit={handleSubmitform} className="mt-8 space-y-4">
           <input
             type="text"
+            name="name"
+            required
             placeholder="Name"
-            className="w-full backdrop-blur-2xl bg-white/10 placeholder:text-white rounded-lg py-3  px-4 text-white text-sm outline-[#a91079]"
+            className="w-full backdrop-blur-2xl bg-white/10 placeholder:text-white rounded-lg py-3  px-4 text-white text-sm outline-pink-700"
           />
           <input
             type="email"
+            name="email"
+            required
             placeholder="Email"
-            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg py-3 px-4 text-white placeholder:text-white text-sm outline-[#a91079]"
+            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg py-3 px-4 text-white placeholder:text-white text-sm outline-pink-700"
           />
           <input
             type="text"
+            name="subject"
+            required
             placeholder="Subject"
-            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg py-3 px-4 text-white placeholder:text-white text-sm outline-[#a91079]"
+            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg py-3 px-4 text-white placeholder:text-white text-sm outline-pink-700 "
           />
           <textarea
             placeholder="Message"
             rows={6}
-            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg px-4 text-white placeholder:text-white text-sm pt-3 outline-[#a91079]"
+            className="w-full backdrop-blur-2xl bg-white/10 rounded-lg px-4 text-white placeholder:text-white text-sm pt-3 outline-pink-700"
             defaultValue={""}
           />
+
           <button
-            type="button"
+            type="submit"
             className="text-white transition-all duration-200 bg-pink-700 hover:bg-pink-600 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
           >
             <svg

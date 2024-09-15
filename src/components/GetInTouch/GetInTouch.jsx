@@ -41,8 +41,8 @@ const GetInTouch = () => {
           </li>
         </ul>
         <ul className="flex mt-12 space-x-4">
-          <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="https://www.facebook.com/iyaRahmanirRahim">
+          <li className="bg-pink-700 hover:bg-pink-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <a target="_blank" href="https://www.facebook.com/iyaRahmanirRahim">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18px"
@@ -57,8 +57,11 @@ const GetInTouch = () => {
               </svg>
             </a>
           </li>
-          <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="https://www.linkedin.com/in/md-akash-khan-9585a02a0/">
+          <li className="bg-pink-700 hover:bg-pink-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/md-akash-khan-9585a02a0/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18px"
@@ -73,8 +76,8 @@ const GetInTouch = () => {
               </svg>
             </a>
           </li>
-          <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="https://www.instagram.com/akash01613500/">
+          <li className="bg-pink-700 hover:bg-pink-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <a target="_blank" href="https://www.instagram.com/akash01613500/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18px"
