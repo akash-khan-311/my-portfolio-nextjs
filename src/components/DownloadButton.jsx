@@ -1,12 +1,12 @@
 "use client";
 
 const DownloadButton = () => {
-  // https://drive.google.com/file/d/1e_M_kgN-bGB1Ow-TOdi0oGMHjjWIbTNw/view?usp=sharing
+  // https://drive.google.com/file/d/1Nq8do3O-rJ0DhhUcNGWy5rKM-RhwWrVD/view?usp=sharing
   return (
     <a
-      href="https://drive.google.com/uc?export=download&id=1e_M_kgN-bGB1Ow-TOdi0oGMHjjWIbTNw"
+      href="https://drive.google.com/uc?export=download&id=1Nq8do3O-rJ0DhhUcNGWy5rKM-RhwWrVD"
       download={
-        "https://drive.google.com/uc?export=download&id=1e_M_kgN-bGB1Ow-TOdi0oGMHjjWIbTNw"
+        "https://drive.google.com/uc?export=download&id=1Nq8do3O-rJ0DhhUcNGWy5rKM-RhwWrVD"
       }
       type="button"
       className="px-8 py-3 cursor-pointer bg-[#F31559] rounded-md text-white outline-none focus:invisible shadow-lg transform active:scale-x-75 transition-transform mx-5 flex"
