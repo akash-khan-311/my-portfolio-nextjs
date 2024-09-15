@@ -2,6 +2,7 @@ import ParticlesComponent from "../Particles";
 import SocialAcount from "../SocialAccount/SocialAcount";
 import DownloadButton from "../DownloadButton";
 import TypeAnimationCom from "../TypeAnimationCom";
+import BioText from "../BioText/BioText";
 
 const Home = () => {
   return (
@@ -13,11 +14,7 @@ const Home = () => {
           <TypeAnimationCom />
         </h2>
         <div className="text-center flex flex-col justify-center text-black dark:text-gray-400 text-sm md:text-xl">
-          <p>
-            {`I'm always open to new opportunities, collaborations, and discussions
-        about the exciting possibilities in the world of web development.Whether you're a fellow developer, potential collaborator, or someone
-        with a shared passion for innovation, I'd love to connect.`}
-          </p>
+          <BioText />
         </div>
         <SocialAcount />
 
