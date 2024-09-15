@@ -1,16 +1,14 @@
-
 // import WorkingExperince from "../../components/WorkingExperince/WorkingExperince";
 
 import PageTitle from "@/components/PageTitle/PageTitle";
 import WorkingExperince from "@/components/WorkingExperience/WorkingExperience";
 export const metadata = {
-    title: "Skills",
-    description: "Skills Of Akash Khan",
-  };
+  title: "Skills",
+  description: "Skills Of Akash Khan",
+};
 const MySkillsPage = () => {
   return (
     <div>
-   
       {/* Skills Section */}
       <section>
         <PageTitle title={"my skills"} />
@@ -21,7 +19,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="50"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
@@ -45,7 +43,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="500"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
@@ -72,7 +70,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="1000"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
@@ -96,7 +94,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="1500"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
@@ -123,7 +121,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="2000"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
@@ -147,7 +145,7 @@ const MySkillsPage = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="2500"
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-easing="ease-in-out"
             >
               <div className="mb-1  font-medium dark:text-white uppercase text-lg">
