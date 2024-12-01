@@ -74,14 +74,14 @@ const projects = [
   },
   {
     id: 7,
-    name: "as programming",
+    name: "AS Programming",
     image: "https://i.postimg.cc/zXh8YJxV/projects-6.png",
-    live_link: "https://as-programming-courses.netlify.app/",
-    code_link: "https://github.com/akash-khan-311/as-programming",
-    category: "react",
-    tags: ["Tailwind", "React JS"],
+    live_link: "https://as-programming.vercel.app/",
+    code_link: "https://github.com/akash-khan-311/as-programming-nextjs",
+    category: "nextjs",
+    tags: ["Tailwind", "React JS", "Next JS", "MongoDB", "Mongoose"],
     description:
-      "A React-based platform offering programming courses, providing a comprehensive learning experience with diverse modules, projects, and real-world applications for aspiring developers.",
+      "Developed a responsive and dynamic programming course-selling website, AS Programming, using Next.js. This project was a testament to my ability to create visually appealing and user-friendly web applications that cater to the needs of programming enthusiasts.",
   },
   {
     id: 8,
